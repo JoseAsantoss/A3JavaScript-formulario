@@ -1,0 +1,221 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    background-color: red;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.contenedor {
+    max-width: 80%;
+    height: fit-content;
+    margin: 4% auto;
+    background-color: rgba(250, 250, 250, 0.815);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.contenedor header {
+    width: 100%;
+    min-width: 50%;
+    height: fit-content;
+    margin-top: 2%;
+}
+header h1 {
+    text-align: center;
+    color: red;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.pizza {
+    width: 65%;
+    height: 100%;
+    margin-top: 1.5%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.cliente {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.cliente input {
+    width: 35%;
+    margin-bottom: 1%;
+    margin-right: 3%;
+    padding: 1%;
+    border: none;
+}
+
+.pedido {
+    width: 99.5%;
+    height:40%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    align-items: center;
+}
+
+.pedido .tipo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tipo h3,
+.ingredientes h3 {
+    width: 100%;
+    color: red;
+}
+
+.tipo div {
+    width: 20%;
+}
+
+.pedido .ingredientes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.min {
+    font-size:small;
+    color: orangered;
+}
+
+.ingredientes div {
+    width: 20%;
+    margin-left: 4%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.botones {
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    margin-top: 3%;
+}
+
+input.btn{
+    padding: 1.5% 2%;
+    background-color: bisque;
+    color: red;
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: bold;
+    border: none;
+    margin-right: 3%;
+}
+
+input.btn:hover {
+    background-color: red;
+    color: bisque;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+input.btn:disabled{
+    font-size: 0.8;
+    font-weight: bold;
+    background-color: rgba(255, 228, 196, 0.664);
+    color: rgba(255, 0, 0, 0.664);
+}
+
+div.precio {
+    width: 35%;
+    max-height: 100%;
+    background-color: antiquewhite;
+    margin-top: 1.5%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+div.precio > div{
+    width: 100%;
+}
+
+.titulo {
+    height: fit-content;
+    margin-bottom: 3.5%;
+}
+
+div.precio > .titulo >h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+div.resumen {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.tam,
+.ing {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ing {
+    width:100%;
+    margin-left: 15%;
+    font-size: smaller;
+    /* border: 2px solid green; */
+}
+
+.tam p,
+.fila p {
+    margin-top: 0;
+    margin-bottom: 1%;
+}
+
+.fila {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+
+}
+
+
+
+.pagar {
+    text-align: left;
+}
+
+.bien {
+   background-color: rgba(163, 235, 190, 0.774);
+}
+
+.mal {
+    background-color:  red;
+}
+
+
+
