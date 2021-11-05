@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    padding: 0.5rem;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(183, 188, 216);
+}
+
+span{
+    color: red;
+}
+
+#span_nombre, #span_direccion, #span_telefono, #span_email, #span_tamanio,#span_ingredient,
+ #span_telefono_erroneo, #span_nombre_erroneo, #span_email_erroneo{
+    display: none;
+}
+h1{
+    text-align: center;
+    margin: 1rem;
+}
+
+form{
+    width: 900px;
+    margin: 3rem auto;
+    border-radius: 10px;
+    background-color:rgb(180, 183, 202);
+}
+
+fieldset{
+    border-radius: 10px;
+}
+input{
+    margin-top: 0.5rem;
+}
+
+

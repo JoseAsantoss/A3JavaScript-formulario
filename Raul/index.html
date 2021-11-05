@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <script type="text/javascript" src="js/actividad3.js"></script>
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>PIZZERIA LOS 4 JINETES</h1>
+
+    <form id="formulario" action="servidor" method="get">
+    <fieldset>
+        <fieldset>
+            <legend>Pedido</legend>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+            <span id="span_nombre">Debe introducir un nombre</span>
+            <span id="span_nombre_erroneo"> Nombre no válido (La primera letra debe ser mayúscula) </span>
+            <br>
+            <input type="text" id="direccion" name="direccion" placeholder="direccion">
+            <span id="span_direccion">Debe introducir una direccion</span>
+            <br>
+            <input type="tel" id="telefono" name="telefono" placeholder="telefono">
+            <span id="span_telefono">Debe introducir un teléfono</span>
+            <span id="span_telefono_erroneo"> Número de telefono erroneo </span>
+            <br>
+            <input type="email" id="email" name="email" placeholder="email">
+            <span id="span_email">Debe introducir un email</span>
+            <span id="span_email_erroneo"> Email erroneo </span>
+        </fieldset>   
+        <fieldset>
+            <legend>Elige tu pizza</legend>
+
+            <p id="tamanio">Tamaño <span id="span_tamanio">Debe seleccionar un tamaño</span></p>
+            <label for="pequena">Pequeña (5€)</label>
+            <input type="radio" id="pequena" name="tamanio" value="pequena">
+            <label for="mediana">Mediana (10€)</label>
+            <input type="radio" id="mediana" name="tamanio" value="mediana">
+            <label for="grande">Grande (15€)</label>
+            <input type="radio" id="grande" name="tamanio" value="grande">
+            
+
+            <p id="ingredient">Ingredientes <span id="span_ingredient">Debe elegir al menos un ingrediente</span></p>
+            <label for="pepperoni">Pepperoni (1€)</label>
+            <input type="checkbox" id="pepperoni" name="ingredient" value="pepperoni">
+            <label for="bacon">Bacon (1€)</label>
+            <input type="checkbox" id="bacon" name="ingredient" value="bacon">
+            <label for="cebolla">Cebolla (1€)</label>
+            <input type="checkbox" id="cebolla" name="ingredient" value="cebolla">
+            <label for="pimiento">Pimiento (1€)</label>
+            <input type="checkbox" id="pimiento" name="ingredient" value="pimiento">
+             
+        </fieldset> 
+        <p id="precioTotal">Precio total: </p>
+    </fieldset> 
+    <input type="button" id="botonRealizaPedido"value="Realizar pedido">
+    </form>
+    
+</body>
+</html>
