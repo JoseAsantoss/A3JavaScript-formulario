@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria Los 4 Jinetes</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script defer src="scripts/script.js"></script>
+</head>
+<body>
+    <header>
+        <img class="img-logo" src="img/header.jpg" alt="Logo pizzeria">
+    </header>
+    <nav class="nav">
+        <h2> Haz tu pedido de pizza </h2>
+    </nav>
+    <section>
+        <!-- <p>Formulario</p> -->
+        
+        <form class="formulario" action="#" method="get">
+            <input class="texto" type="text" name="nombre" value="" placeholder="Nombre" autofocus required>
+            <input class="texto" type="text" name="direccion" value="" placeholder="Dirección" required>
+            <input class="texto" type="tel" name="tel" value="" placeholder="Teléfono" required>
+            <input class="texto" type="email" name="email" value="" placeholder="E-mail" required>
+
+            <h4>Elige el tamaño</h4>
+
+            <div class="contiene-size">
+                <div><img class="small" src="img/pizza.png" alt="pizza"></div>
+                <div><img class="medium" src="img/pizza.png" alt="pizza"></div>
+                <div><img class="big" src="img/pizza.png" alt="pizza"></div>
+                <div><input class="pizza" type="radio" name="size" value="small"><p>Pequeña</p></div>
+                <div><input class="pizza" type="radio" name="size" value="medium"><p>Mediana</p></div>
+                <div><input class="pizza" type="radio" name="size" value="big"><p>Grande</p></div>
+            </div>
+
+            <h4>Que ingredientes te atreves a pedir?</h4>
+
+            <div class="ingredientes">
+                <div><img src="img/peperoncino.png" alt="Peperoncino"></div>
+                <div class="check"><input type="checkbox" name="ingredient" value="peperoncino"><span class="text">Peperoncino</span></div>
+
+                <div><img src="img/jalapenio.png" alt="Jalapenio"></div>
+                <div class="check"><input type="checkbox" name="ingredient" value="jalapenio"><span class="text">Jalapeño</span></div>
+
+                <div><img src="img/tabasco.png" alt="Tabasco"></div>
+                <div class="check"><input type="checkbox" name="ingredient" value="tabasco"><span class="text">Tabasco</span></div>
+
+                <div><img src="img/peperoni.png" alt="Peperoni"></div>
+                <div class="check"><input type="checkbox" name="ingredient" value="peperoni"><span class="text">Peperoni</span></div>
+            </div>
+
+            <div class="pedido">
+                <div><a href="#"><img src="img/pizza-pedido.png" alt="pizza"></a></div>
+            </div>
+            <div class="importes">
+                <div><h5>Importe de la masa: </h5></div>
+                <div><h5>Importe de los ingredientes: </h5></div>
+                <div><h5>Importe TOTAL: </h5></div>
+            </div>
+
+        </form>
+    </section>
+    <footer>
+        <h2>Footer</h2>
+    </footer>
+    
+</body>
+</html>
