@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 3 - Formularios</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://kit.fontawesome.com/0510d6ef52.js" crossorigin="anonymous"></script>
+    <script src="./js/funciones.js"></script>
+</head>
+<body>
+    <section id="contenedor" class="contenedor">
+        <header>
+            <h1>Pizzería "Los 4 Jinetes"</h1>
+        </header>
+        <form id="pizza" class="pizza" action="" method="post">
+
+            <div class="cliente">
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                <input type="text" name="direccion" id="direccion" placeholder="Dirección de envío" required>
+                <input type="tel" name="telefono" id="telefono" placeholder="Num. de teléfono" required>
+                <input type="email" name="email" id="email" placeholder="ejemplo@ejemplo.com" required>
+            </div>
+            <div class="pedido">
+                <div class="tipo">
+                    <h3>Elige el tamaño:</h3>
+                    <div>
+                        <input type="radio" name="tamanio" value="pequeña" id="peque">
+                    <label> Pequeña</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="tamanio" value="mediana" id="mediana">
+                    <label> Mediana</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="tamanio" value="grande" id="grande">
+                    <label> Grande</label>
+                    </div> 
+                </div>
+                <div class="ingredientes">
+                    <h3>Elige los ingredíentes 
+                        <span class="min"> mínimo 2</span>
+                    </h3>
+                    <div>
+                        <input type="checkbox" name="ingrediente" id="bacon" value="bacon" disabled>
+                        <label> Bacon</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="ingrediente" id="queso" value="queso" disabled>
+                        <label> Queso</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="ingrediente" id="tomate" value="tomate" disabled>
+                        <label> Tomate</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="ingrediente" id="jamon" value="jamon" disabled>
+                        <label> Jamón</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="ingrediente" id="atun" value="atun" disabled>
+                        <label> Atún</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="ingrediente" id="oliva" value="oliva" disabled>
+                    <label> Olivas</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="ingrediente" id="mozzarella" value="mozzarella" disabled>
+                    <label> Mozzarella</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="ingrediente" id="pinia" value="asco" disabled>
+                    <label> Piña</label>
+                    </div>   
+                </div>
+            </div>
+            <div class="botones">
+                <input class="btn" type="reset" value="Borrar">
+                <input class="btn" type="button" value="Añadir" id="add-btn" disabled>
+                <input class="btn" type="submit" id="submit-btn" value="Comprar" disabled>
+            </div>
+        </form>
+        <div id="precio" class="precio">
+            <div class="titulo">
+                <h4>Tu pedido</h4>
+            </div>
+            
+            <div id="resumen" class="resumen">
+                <div class="tam" id="tam">
+                    <div class="ing" id="ing"></div>
+                </div> 
+            </div>
+            <div class="pagar">
+                <p>El precio es: <span id="pvp"></span> €</p>
+                <p>El iva es: <span id="iva"></span> €</p>
+                <p>Total: <span id="ptotal"></span> €</p>
+            </div>
+            
+        </div>
+    </section>
+</body>
+</html>
