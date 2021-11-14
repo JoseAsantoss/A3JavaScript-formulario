@@ -18,6 +18,8 @@ window.onload = function() {
                     validation(evento);
                 }
             );
+
+          /*   break; */
         }
 
         if(caja[i].name == 'tamanio' || caja[i].name == 'ingrediente') {
@@ -63,7 +65,7 @@ empiece por una letra mayúscula y sigan
 entre 8 y 30 caracteres, mayúsculas o minúsculas
 o _ y acabe por alguna de estas.
 El usuario introduce nombre y apellidos)*/
-const nomformatRegex = /^([A-Za-zÁÉÍÓÚñáéíóúÑ]{0}?[A-Za-zÁÉÍÓÚñáéíóúÑ\']+[\s])+([A-Za-zÁÉÍÓÚñáéíóúÑ]{0}?[A-Za-zÁÉÍÓÚñáéíóúÑ\'])+[\s]?([A-Za-zÁÉÍÓÚñáéíóúÑ]{0}?[A-Za-zÁÉÍÓÚñáéíóúÑ\'])?$/gi;
+const nomformatRegex = /^([A-ZÁÉÍÓÚ]{1}?[A-Za-zÁÉÍÓÚñáéíóúÑ\']+[\s])+([A-Za-zÁÉÍÓÚñáéíóúÑ]{0}?[A-Za-zÁÉÍÓÚñáéíóúÑ\'])+[\s]?([A-Za-zÁÉÍÓÚñáéíóúÑ]{0}?[A-Za-zÁÉÍÓÚñáéíóúÑ\'])?$/g;
 
 /*Con la expresión regular del email, pretendemos que
 sean válidos estos emails prototipo:
